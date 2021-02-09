@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -61,6 +62,7 @@ inquirer.prompt([
         name: "license",
         message: questions[6],
         choices: [
+            "none",
             "GNU AGPLv3",
             "GNU GPLv3",
             "GNU LGPLv3",
@@ -83,7 +85,9 @@ inquirer.prompt([
     },
 ]).then( (answers) => {
 
-    console.log(answers);
+    // console.log(answers);
+    console.log(generateMarkdown(answers));
+    
 
 });
 
