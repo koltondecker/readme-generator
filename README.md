@@ -1,46 +1,57 @@
 
-  # sdaf
+  # sdf
+  ![License](https://img.shields.io/static/v1?label=License&message=Apache_License_2.0&color=blue)
+  ## Table of Contents: 
+
+    [Description](Link)
+    [Installation Instructions](link)
+    [Usage Information](link)
+    [Contribution Guidelines](link)
+    [Test Instructions](link)
+    [Licensing](link)
+    [Questions](link)
   ## Description: 
 
-  fds 
+  dfs 
 
   <hr>
 
   ## Installation Instructions: 
 
-  fds
+  dsf
 
   <hr>
 
   ## Usage Information: 
 
-  fds
+  dsf
 
   <hr>
 
   ## Contribution Guidelines: 
 
-  dfs
+  dsf
 
   <hr>
 
-  ##Test Instructions: 
+  ## Test Instructions: 
 
-  sdf
+  dfs
 
   <hr>
 
   ### Licensing: 
 
-  ![License](https://img.shields.io/static/v1?label=License&message=GNU_AGPLv3&color=blue) 
-    <a href="https://www.gnu.org/licenses/agpl-3.0">https://www.gnu.org/licenses/agpl-3.0</a>
-    
+  Notice: This application is covered under the Apache License 2.0 license.
+    <a href="https://opensource.org/licenses/Apache-2.0">https://opensource.org/licenses/Apache-2.0</a>
 
   <hr>
 
   ### Questions: 
 
-  dfs
+  If you would like to learn more, please take a look through my github below:
+  <a href="github.com/dsf"><img src="./assets/images/github-brands.svg" height="30px" width="auto" alt="github icon"> </a>Visit my GitHub at <a href="github.com/dsf">github.com/dsf</a>
 
-  fsd
+  If you still have questions, please send me an email and I will respond as soon as I can:
+  dsf
 
