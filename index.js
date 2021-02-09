@@ -19,11 +19,75 @@ const questions = [
 function writeToFile(fileName, data) {
 
 
-    
+
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+
+inquirer.prompt([
+    {
+        type: "input",
+        name: "title",
+        message: questions[0]
+    },
+    {
+        type: "input",
+        name: "description",
+        message: questions[1]
+    },
+    {
+        type: "input",
+        name: "installationInstructions",
+        message: questions[2]
+    },
+    {
+        type: "input",
+        name: "usageInformation",
+        message: questions[3]
+    },
+    {
+        type: "input",
+        name: "contributionGuidelines",
+        message: questions[4]
+    },
+    {
+        type: "input",
+        name: "testInstructions",
+        message: questions[5]
+    },
+    {
+        type: "list",
+        name: "license",
+        message: questions[6],
+        choices: [
+            "GNU AGPLv3",
+            "GNU GPLv3",
+            "GNU LGPLv3",
+            "Mozilla Public License 2.0",
+            "Apache License 2.0",
+            "MIT License",
+            "Boost Software License 1.0",
+            "The Unlicense"
+        ]
+    },
+    {
+        type: "input",
+        name: "username",
+        message: questions[7]
+    },
+    {
+        type: "input",
+        name: "email",
+        message: questions[8]
+    },
+]).then( (answers) => {
+
+    console.log(answers);
+
+});
+
+}
 
 // Function call to initialize app
 init();
