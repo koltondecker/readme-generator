@@ -17,9 +17,11 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+function writeToFile(data) {
 
-
+    fs.writeFile("README.md", data, () => {
+        console.log("File written successfully!");
+    });
 
 }
 
@@ -62,7 +64,6 @@ inquirer.prompt([
         name: "license",
         message: questions[6],
         choices: [
-            "none",
             "GNU AGPLv3",
             "GNU GPLv3",
             "GNU LGPLv3",
@@ -70,7 +71,8 @@ inquirer.prompt([
             "Apache License 2.0",
             "MIT License",
             "Boost Software License 1.0",
-            "The Unlicense"
+            "The Unlicense",
+            "none"
         ]
     },
     {
@@ -85,9 +87,8 @@ inquirer.prompt([
     },
 ]).then( (answers) => {
 
-    // console.log(answers);
-    console.log(generateMarkdown(answers));
-    
+    let markdown = generateMarkdown(answers);
+    writeToFile(markdown);
 
 });
 

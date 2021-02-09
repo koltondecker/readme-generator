@@ -6,7 +6,8 @@ function renderLicenseBadge(license) {
     return "";
   }
   else {
-    return `[![License](https://img.shields.io/static/v1?label=<License>&message=<${license}>&color=<blue>)]`;
+    license = license.replace(/\s/g , "_");
+    return `![License](https://img.shields.io/static/v1?label=License&message=${license}&color=blue)`;
   }
 
 }
@@ -55,15 +56,11 @@ function renderLicenseLink(license) {
   }
   else {
 
-    let licenseLink = licenseArray.forEach(() => {
-      if(this.name === license) {
-        return this.link;
-      }
-    });
+    let licenseLink = licenseArray.find(e => e.name === license)
 
-    return licenseLink;
+    return licenseLink.link;
 
-  }
+  };
 
 }
 
@@ -78,7 +75,9 @@ function renderLicenseSection(license) {
     return ""
   }
   else {
-    return `${licenseBadge} <a href="${licenseLink}">${licenseLink}</a>`;
+    return `${licenseBadge}\n
+    <a href="${licenseLink}">${licenseLink}</a>
+    `;
   }
 
 }
@@ -88,15 +87,37 @@ function generateMarkdown(data) {
 
   let licenseSection = renderLicenseSection(data.license);
 
-  return `# ${data.title}
-  ${data.description}
-  ${data.installationInstructions}
-  ${data.usageInformation}
-  ${data.contributionGuidelines}
-  ${data.testInstructions}
-  ${licenseSection}
-  ${data.username}
-  ${data.email}
+  return `
+  # ${data.title}
+  ## Table of Contents: \n
+    [Description](Link)
+    [Installation Instructions](link)
+    [Usage Information](link)
+    [Contribution Guidelines](link)
+    [Test Instructions](link)
+    [Licensing](link)
+    [Questions](link)
+  ## Description: \n
+  ${data.description} \n
+  <hr>\n
+  ## Installation Instructions: \n
+  ${data.installationInstructions}\n
+  <hr>\n
+  ## Usage Information: \n
+  ${data.usageInformation}\n
+  <hr>\n
+  ## Contribution Guidelines: \n
+  ${data.contributionGuidelines}\n
+  <hr>\n
+  ##Test Instructions: \n
+  ${data.testInstructions}\n
+  <hr>\n
+  ### Licensing: \n
+  ${licenseSection}\n
+  <hr>\n
+  ### Questions: \n
+  ${data.username}\n
+  ${data.email}\n
 `;
 }
 
