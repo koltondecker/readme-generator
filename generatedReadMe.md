@@ -1,6 +1,6 @@
 
   # sdf
-  ![License](https://img.shields.io/static/v1?label=License&message=GNU_AGPLv3&color=blue)
+  
   ## Table of Contents: 
 
   [Description](https://github.com/koltondecker/readme-generator#description)
@@ -21,7 +21,7 @@
 
   ## Description: 
 
-  dfs 
+  dsf 
 
   <hr>
 
@@ -33,13 +33,13 @@
 
   ## Usage Information: 
 
-  dfs
+  dsf
 
   <hr>
 
   ## Contribution Guidelines: 
 
-  fsd
+  sdf
 
   <hr>
 
@@ -51,9 +51,7 @@
 
   ### Licensing: 
 
-  Notice: This application is covered under the GNU AGPLv3 license.
-
-    <a href="https://www.gnu.org/licenses/agpl-3.0">https://www.gnu.org/licenses/agpl-3.0</a>
+  There is no license associated with this project!
 
   <hr>
 
@@ -61,9 +59,9 @@
 
   If you would like to learn more, please take a look through my github below:
 
-  <a href="github.com/sdf"><img src="./assets/images/github-brands.svg" height="30px" width="auto" alt="github icon"> </a>Visit my GitHub at <a href="github.com/sdf">github.com/sdf</a>
+  <a href="github.com/dsf"><img src="./assets/images/github-brands.svg" height="40px" width="auto" alt="github icon"> </a>Visit my GitHub at <a href="https://github.com/dsf">github.com/dsf</a>
 
   If you still have questions, please send me an email and I will respond as soon as I can:
 
-  dfs
+  <a href="mailto:sdf">sdf</a>
 

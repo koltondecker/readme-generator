@@ -56,7 +56,7 @@ function renderLicenseLink(license) {
   }
   else {
 
-    let licenseLink = licenseArray.find(e => e.name === license)
+    let licenseLink = licenseArray.find(e => e.name === license);
 
     return licenseLink.link;
 
@@ -71,11 +71,10 @@ function renderLicenseSection(license) {
   let licenseLink = renderLicenseLink(license);
 
   if(license === "none") {
-    return ""
+    return "There is no license associated with this project!";
   }
   else {
-    return `Notice: This application is covered under the ${license} license.\n
-    <a href="${licenseLink}">${licenseLink}</a>`;
+    return `Notice: This application is covered under the ${license} license.\n\n <a href="${licenseLink}">${licenseLink}</a>`;
   }
 
 }
@@ -118,9 +117,9 @@ function generateMarkdown(data) {
   <hr>\n
   ### Questions: \n
   If you would like to learn more, please take a look through my github below:\n
-  <a href="github.com/${data.username}"><img src="./assets/images/github-brands.svg" height="30px" width="auto" alt="github icon"> </a>Visit my GitHub at <a href="github.com/${data.username}">github.com/${data.username}</a>\n
+  <a href="github.com/${data.username}"><img src="./assets/images/github-brands.svg" height="40px" width="auto" alt="github icon"> </a>Visit my GitHub at <a href="https://github.com/${data.username}">github.com/${data.username}</a>\n
   If you still have questions, please send me an email and I will respond as soon as I can:\n
-  ${data.email}\n
+  <a href="mailto:${data.email}">${data.email}</a>\n
 `;
 }
 
