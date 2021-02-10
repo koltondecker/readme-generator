@@ -89,13 +89,13 @@ function generateMarkdown(data) {
   # ${data.title}
   ${licenseBadge}
   ## Table of Contents: \n
-  [Description](https://github.com/koltondecker/readme-generator#description)\n
-  [Installation Instructions](https://github.com/koltondecker/readme-generator#installation-instructions)\n
-  [Usage Information](https://github.com/koltondecker/readme-generator#usage-information)\n
-  [Contribution Guidelines](https://github.com/koltondecker/readme-generator#contribution-guidelines)\n
-  [Test Instructions](https://github.com/koltondecker/readme-generator#test-instructions)\n
-  [Licensing](https://github.com/koltondecker/readme-generator#licensing)\n
-  [Questions](https://github.com/koltondecker/readme-generator#questions)\n
+  [Description](#description)\n
+  [Installation Instructions](#installation-instructions)\n
+  [Usage Information](#usage-information)\n
+  [Contribution Guidelines](#contribution-guidelines)\n
+  [Test Instructions](#test-instructions)\n
+  [Licensing](#licensing)\n
+  [Questions](#questions)\n
   <hr>\n
   ## Description: \n
   ${data.description} \n
