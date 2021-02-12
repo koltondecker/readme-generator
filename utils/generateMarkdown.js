@@ -117,7 +117,7 @@ function generateMarkdown(data) {
   <hr>\n
   ### Questions: \n
   If you would like to learn more, please take a look through my github below:\n
-  <a href="github.com/${data.username}"><img src="./assets/images/github-brands.svg" height="40px" width="auto" alt="github icon"> </a>Visit my GitHub at <a href="https://github.com/${data.username}">github.com/${data.username}</a>\n
+  <a href="https://github.com/${data.username}"><img src="./assets/images/github-brands.svg" height="40px" width="auto" alt="github icon"> </a>Visit my GitHub at <a href="https://github.com/${data.username}">github.com/${data.username}</a>\n
   If you still have questions, please send me an email and I will respond as soon as I can:\n
   <a href="mailto:${data.email}">${data.email}</a>\n
 `;
