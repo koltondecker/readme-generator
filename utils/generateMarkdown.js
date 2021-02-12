@@ -100,19 +100,19 @@ function generateMarkdown(data) {
   ## Description: \n
   ${data.description} \n
   <hr>\n
-  ## Installation Instructions: \n
+  ## Installation: \n
   ${data.installationInstructions}\n
   <hr>\n
-  ## Usage Information: \n
+  ## Usage: \n
   ${data.usageInformation}\n
   <hr>\n
-  ## Contribution Guidelines: \n
+  ## Contributing: \n
   ${data.contributionGuidelines}\n
   <hr>\n
-  ## Test Instructions: \n
+  ## Tests: \n
   ${data.testInstructions}\n
   <hr>\n
-  ### Licensing: \n
+  ### License: \n
   ${licenseSection}\n
   <hr>\n
   ### Questions: \n
