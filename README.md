@@ -14,6 +14,8 @@
 Any good project also needs and utilizes a good readme file. It can be tedious to go through the work to format and build a readme every time you build a project. That's where this readme generator comes in. Using node.js and command line input, a user can follow command line prompts to input necessary information to populate a professional looking readme in minutes. 
 
 <a href="https://www.npmjs.com/package/inquirer">Inquirer</a> was used for this project. 
+
+Check out a video walkthrough of this application <a href="https://drive.google.com/file/d/1xMviVYzFoZ4ZFaG_8YR1uM3zWQmaqtiB/view?usp=sharing">HERE</a>
 <hr>
 
 ## Installation: 
